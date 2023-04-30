@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="final_paper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/final_paper_jar</output-path>
+    <root id="archive" name="final_paper.jar">
+      <element id="module-output" name="final_paper" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/portswigger/burp/extensions/montoya-api/0.10.1/montoya-api-0.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/portswigger/burp/extender/burp-extender-api/2.1/burp-extender-api-2.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.24" />
+      <element id="library" level="project" name="Maven: com.alibaba:fastjson:2.0.24" />
+      <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.24" />
+    </root>
+  </artifact>
+</component>
