@@ -1,0 +1,15 @@
+POST /WebGoat/xxe/simple HTTP/1.1
+Host: 192.168.28.1:8996
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Content-Type: application/xml
+X-Requested-With: XMLHttpRequest
+Content-Length: 58
+Origin: http://192.168.28.1:8996
+Connection: close
+Referer: http://192.168.28.1:8996/WebGoat/start.mvc
+Cookie: JSESSIONID=8q0g_r0uLvrC6256tsz82hNEyPr9AaFutIn9cvJF; PHPSESSID=nfkmqm3fqfb7nml8it3411mc71; security=low
+
+<?xml version="1.0"?><comment>  <text>xxx</text></comment>
