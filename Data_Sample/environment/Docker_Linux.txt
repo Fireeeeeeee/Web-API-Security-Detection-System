@@ -1,0 +1,4 @@
+vulnerables/web-dvwa
+webgoat/webgoat-8.0
+pikachu
+vulhub:CVE-2021-41773\CVE-2021-42013\CVE-2021-44228
