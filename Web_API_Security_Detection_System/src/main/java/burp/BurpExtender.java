@@ -416,7 +416,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
         this.addPanelTitleToGridBagLayout("Local File",localFilePanel,0,0);
 
         //
-        JLabel textFieldLabel = new JLabel("选择文件夹：");
+        JLabel textFieldLabel = new JLabel("Directory：");
         this.callbacks.customizeUiComponent(textFieldLabel);
         textFieldLabel.setHorizontalAlignment(2);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
@@ -435,7 +435,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
         localFilePanel.add(filePath,gridBagConstraints);
 
         //三个按钮设置
-        JButton selectButton = new JButton("本地文件");
+        JButton selectButton = new JButton("Select");
         gridBagConstraints.gridx = xPosition + 2;
         gridBagConstraints.gridy = yPosition;
         localFilePanel.add(selectButton,gridBagConstraints);
@@ -458,7 +458,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
             }
         });
 
-        JButton inputButton = new JButton("导入");
+        JButton inputButton = new JButton("Import");
         gridBagConstraints.gridx = xPosition + 3;
         gridBagConstraints.gridy = yPosition;
         localFilePanel.add(inputButton,gridBagConstraints);
@@ -502,7 +502,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
             }
         });
 
-        JButton deleteButton = new JButton("清空");
+        JButton deleteButton = new JButton("Clear");
         gridBagConstraints.gridx = xPosition + 4;
         gridBagConstraints.gridy = yPosition;
         localFilePanel.add(deleteButton,gridBagConstraints);
@@ -719,7 +719,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
         stringPanel.add(stringAreaScrollPanel,stringAreaConstraints);
 
         //添加按钮
-        JButton editButton = new JButton("编辑");
+        JButton editButton = new JButton("Edit");
         editButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -736,7 +736,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
         stringAreaConstraints.weightx = 1.0D;
         stringPanel.add(editButton,buttonConstraints);
 
-        JButton agreeButton = new JButton("确认");
+        JButton agreeButton = new JButton("Conf");
         agreeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -1532,9 +1532,9 @@ public class BurpExtender implements IBurpExtender ,ITab{
         //添加三个单选按钮
         JPanel radioButtonPanel = new JPanel();
         radioButtonPanel.setLayout(new GridBagLayout());
-        stringJRadioButton = new JRadioButton("字符串");
-        dnslogJRadioButton = new JRadioButton("dnslog");
-        serverJRadioButton = new JRadioButton("服务器");
+        stringJRadioButton = new JRadioButton("String");
+        dnslogJRadioButton = new JRadioButton("Dnslog");
+        serverJRadioButton = new JRadioButton("Server");
         timeJRadioButton = new JRadioButton("Time Delay");
         judgeSelect = new ButtonGroup();
         judgeSelect.add(stringJRadioButton);
