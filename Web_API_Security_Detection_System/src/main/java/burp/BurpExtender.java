@@ -99,7 +99,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
     public void registerExtenderCallbacks(IBurpExtenderCallbacks iBurpExtenderCallbacks) {
         this.callbacks = iBurpExtenderCallbacks;
         this.helpers = iBurpExtenderCallbacks.getHelpers();
-        callbacks.setExtensionName("Fire 毕设");
+        callbacks.setExtensionName("Web API Security Detection System");
         updateData  = new UpdateData[updateNum];
         for(int i=0;i<updateNum;i++){
             updateData[i] = new UpdateData();
@@ -3055,7 +3055,7 @@ public class BurpExtender implements IBurpExtender ,ITab{
     }
 
     public String getTabCaption() {
-        return "Web API安全检测系统";//插件名称
+        return "Web API Security Detection System";//插件名称
     }
 
     public Component getUiComponent() {
