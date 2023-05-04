@@ -15,7 +15,7 @@
 
 ## Tips
 
-### Proxy
+### Select
 
 ![image-20230430192625285](README.assets/image-20230430192625285.png)
 
